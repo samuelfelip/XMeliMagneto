@@ -2,6 +2,7 @@
 using Meli.Application.Services;
 using System.Net;
 using Meli.Presentation.API.Model;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Meli.Presentation.API.Controllers
 {
@@ -25,9 +26,9 @@ namespace Meli.Presentation.API.Controllers
         #endregion
 
         #region Actions
-
         [HttpGet]
         [Route("")]
+        [ExcludeFromCodeCoverage]
         public async Task<IActionResult> GetAll()
         {
             var stats = await _DNAService.GetStats();
