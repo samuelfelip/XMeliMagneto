@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Meli.Presentation.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/stats")]
     [ApiController]
     public class StatsController : ControllerBase
     {

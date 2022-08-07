@@ -5,7 +5,7 @@ using Meli.Presentation.API.Model;
 
 namespace Meli.Presentation.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/mutant")]
     [ApiController]
     public class MutantController : ControllerBase
     {
