@@ -35,8 +35,7 @@ namespace Meli.Presentation.API.Controllers
             try
             {
                 var isMutant = await _DNAService.FindMutant(dna.Dna);
-                if (isMutant)
-                    return Ok();
+                if (isMutant) { return Ok(); }
                 return Forbid();
             }
             catch (Exception) { return Forbid(); }
