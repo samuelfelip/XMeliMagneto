@@ -85,6 +85,8 @@ POST → /mutant/
 “dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 }
 
+url en azure: https://xmelimagneto.azurewebsites.net/api/mutant
+
 En caso de verificar un mutante, debería devolver un HTTP 200-OK, en caso contrario un
 403-Forbidden
 
@@ -96,5 +98,10 @@ Exponer un servicio extra “/stats” que devuelva un Json con las estadística
 verificaciones de ADN: {"count_mutant_dna" : 40, "count_human_dna" : 100, "ratio" : 0.4 }
 Tener en cuenta que la API puede recibir fluctuaciones agresivas de tráfico (Entre 100 y 1
 millón de peticiones por segundo).
+
+Url Azure: https://xmelimagneto.azurewebsites.net/api/stats
+
 Test-Automáticos, Code coverage > 80%.
+![image](https://user-images.githubusercontent.com/37428515/183313261-1ddcce9d-1eea-409b-82b9-ffafd8df4f51.png)
+
 
