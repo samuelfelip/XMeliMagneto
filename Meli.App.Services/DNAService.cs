@@ -39,10 +39,10 @@ namespace Meli.Application.Services
             var dNAEntity = new Meli.Data.Domain.Entities.DNAEntity()
             {
                 Dna = stringArrayToString(Dna),
-                IsMutant = !isMutant
+                IsMutant = isMutant
             };
             await AddDNA(dNAEntity);
-            return !isMutant;
+            return isMutant;
         }
 
         public async Task<IEnumerable<DNADto>> GetDNAs()
