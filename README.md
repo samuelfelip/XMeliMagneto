@@ -21,9 +21,6 @@ dotnet ef migrations add initialmigration
 dotnet ef database update
 ```
 
-Para el revisor: Se sustentará localmente porque se implementó paralelismo y la capa gratuita de azure no me ha dejado hacer el deploy del pipeline :c
-
-
 ## Examen Mercadolibre
 Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar
 contra los X-Men.
